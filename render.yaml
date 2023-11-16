@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: varthak_assign
+    buildCommand: npm run build
+    startCommand: npm run start
