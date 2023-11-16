@@ -1,5 +1,5 @@
 {
-  "name": "varthak_technologies_assignment",
+  "name": "varthak_assign",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aman1722/Varthak_Technologies_Assignment.git"
+    "url": "git+https://github.com/rahul7070/varthak_assign.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aman1722/Varthak_Technologies_Assignment/issues"
+    "url": "https://github.com/rahul7070/varthak_assign/issues"
   },
-  "homepage": "https://github.com/aman1722/Varthak_Technologies_Assignment#readme",
+  "homepage": "https://github.com/rahul7070/varthak_assign#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
