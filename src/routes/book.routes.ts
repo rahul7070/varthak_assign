@@ -8,6 +8,7 @@ const bookRouter = Router();
 bookRouter.get('/', auth, async (req: Request, res: Response) => {
   try {
     const userRoles = (req.user as any)?.roles || [];
+    // console.log(userRoles)
     let books: BookDocument[] = [];
 
     if (userRoles.includes('VIEW ALL')) {
@@ -56,5 +57,7 @@ bookRouter.get('/search', auth, async (req: Request, res: Response) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
+
 
 export default bookRouter;

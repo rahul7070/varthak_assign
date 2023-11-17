@@ -11,6 +11,7 @@ const bookRouter = (0, express_1.Router)();
 bookRouter.get('/', auth_middleawre_1.auth, async (req, res) => {
     try {
         const userRoles = req.user?.roles || [];
+        // console.log(userRoles)
         let books = [];
         if (userRoles.includes('VIEW ALL')) {
             books = await book_model_1.default.find();

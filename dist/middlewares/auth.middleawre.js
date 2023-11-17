@@ -17,9 +17,9 @@ const auth = async (req, res, next) => {
     }
     try {
         const decoded = jsonwebtoken_1.default.verify(token, process.env.JWT_SECRET);
-        console.log(decoded);
+        // console.log(decoded)
         const user = await user_model_1.default.findById(decoded.userId);
-        console.log(user);
+        // console.log(user)
         if (!user) {
             return res.status(401).json({ message: 'Unauthorized' });
         }

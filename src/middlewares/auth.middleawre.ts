@@ -30,9 +30,9 @@ export const auth = async (
 
   try {
     const decoded: any = jwt.verify(token, process.env.JWT_SECRET as string);
-    console.log(decoded)
+    // console.log(decoded)
     const user: UserDocument | null = await User.findById(decoded.userId);
-    console.log(user)
+    // console.log(user)
 
     if (!user) {
       return res.status(401).json({ message: 'Unauthorized' });
